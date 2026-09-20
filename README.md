@@ -1,6 +1,6 @@
 # Fazedor de Código — Landing Page
 
-Landing page da comunidade **Fazedor de Código**, uma comunidade de aprendizado mão na massa: encontros semanais, projetos em grupo e mentoria aberta. O lema é simples — _aprenda fazendo_.
+Landing page da comunidade **Fazedor de Código**, uma comunidade de aprendizado mão na massa: encontros mensais, projetos em grupo e mentoria aberta. O lema é simples — _aprenda fazendo_.
 
 ## O que tem aqui
 
@@ -31,7 +31,7 @@ python3 -m http.server 8000
 ## Estrutura da página
 
 - **Hero** — proposta de valor + CTAs
-- **Encontros** (`#encontros`) — agenda semanal: Deploy sem medo, Mutirão de portfólios, Clube do rubber duck, Bot da comunidade
+- **Encontros** (`#encontros`) — agenda mensal: Deploy sem medo, Mutirão de portfólios, Clube do rubber duck, Bot da comunidade
 - **Como funciona** (`#como-funciona`) — o ciclo em 3 passos: traga uma ideia, construa em dupla, publique junto
 - **Materiais** (`#materiais`) — guias e projetos da comunidade
 - **CTA** (`#cta`) — chamada para participar
