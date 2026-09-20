@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><script type="application/json" data-od-external-dependencies>["https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap"]</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fazedor de Código — a comunidade que aprende fazendo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+  <a class="skip" href="#content">Pular para o conteúdo</a>
+
+  <header class="topnav" data-od-id="topnav">
+    <div class="container topnav-inner">
+      <a class="logo" href="#" aria-label="Fazedor de Código — início">
+        <img src="assets/logo.svg" width="144" height="28" alt="Fazedor de Código" />
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#encontros">Encontros</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#materiais">Materiais</a>
+      </nav>
+      <a class="btn btn-secondary" href="#cta" data-od-id="nav-cta">Participar</a>
+    </div>
+  </header>
+
+  <main id="content">
+    <!-- ─── hero ─────────────────────────────────────────────────── -->
+    <section class="section hero" data-od-id="hero">
+      <div class="container hero-split">
+        <div>
+          <p class="eyebrow">Comunidade · aprendizado mão na massa</p>
+          <h1>Aprenda fazendo<span class="cursor-mark" aria-hidden="true">_</span></h1>
+          <p class="lead">Encontros semanais, projetos em grupo e mentoria aberta. Não buscamos perfeição: começamos, testamos e melhoramos junto.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#cta" data-od-id="hero-cta">Participar da comunidade</a>
+            <a class="btn btn-ghost btn-arrow" href="#materiais">Ver projetos</a>
+          </div>
+        </div>
+        <figure class="stage">
+          <img src="assets/hero-capivara.webp" width="548" height="640"
+               alt="Capivara de óculos redondos e moletom preto, programando" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ─── encontros ────────────────────────────────────────────── -->
+    <section class="section" data-od-id="encontros" id="encontros">
+      <div class="container stack stack-loose">
+        <div class="section-head">
+          <p class="eyebrow">Agenda · toda quinta</p>
+          <h2>O que está rolando</h2>
+        </div>
+        <div class="grid-4">
+          <article class="card encontro" data-od-id="encontro-deploy">
+            <span class="chip chip--impacto">Impacto</span>
+            <h3>Deploy sem medo</h3>
+            <p>Publique seu primeiro projeto ao vivo e aprenda o caminho de quem já quebrou produção — e consertou.</p>
+            <p class="card-foot meta">Encontro semanal</p>
+          </article>
+          <article class="card encontro" data-od-id="encontro-mutirao">
+            <span class="chip chip--comunidade">Comunidade</span>
+            <h3>Mutirão de portfólios</h3>
+            <p>Grupos de 4 pessoas revisam o portfólio umas das outras, com feedback guiado por mentores.</p>
+            <p class="card-foot meta">Encontro semanal</p>
+          </article>
+          <article class="card encontro" data-od-id="encontro-rubberduck">
+            <span class="chip chip--curiosidade">Curiosidade</span>
+            <h3>Clube do rubber duck</h3>
+            <p>Traga um bug que te venceu esta semana. A gente explica em voz alta até a solução aparecer.</p>
+            <p class="card-foot meta">Encontro semanal</p>
+          </article>
+          <article class="card encontro" data-od-id="encontro-bot">
+            <span class="chip chip--construcao">Construção</span>
+            <h3>Bot da comunidade</h3>
+            <p>Construção em dupla do bot que avisa os encontros no grupo — do zero ao deploy, commit a commit.</p>
+            <p class="card-foot meta">Projeto contínuo</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── como funciona + materiais ────────────────────────────── -->
+    <section class="section" data-od-id="como-funciona" id="como-funciona">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">O ciclo</p>
+          <h2>Comece, teste, compartilhe</h2>
+          <ol class="steps">
+            <li>
+              <span class="num">01</span>
+              <div>
+                <h3>Traga uma ideia</h3>
+                <p>Proponha um tema para a comunidade — pode ser provisório, pode ser pequeno.</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">02</span>
+              <div>
+                <h3>Construa em dupla</h3>
+                <p>Projetos em grupo com mentoria aberta, do primeiro fork ao último commit.</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">03</span>
+              <div>
+                <h3>Publique junto</h3>
+                <p>Do zero ao deploy sem pânico — revisão de código (review) e publicação (deploy) explicadas na prática.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="card materiais" data-od-id="materiais" id="materiais">
+          <div class="mat-head">Materiais &amp; projetos</div>
+          <div class="mat-row">
+            <div>
+              <h3>Guia do primeiro PR</h3>
+              <p>Passo a passo escrito pela comunidade para sair do fork ao merge sem pânico.</p>
+            </div>
+            <span class="tag">Guia</span>
+          </div>
+          <div class="mat-row">
+            <div>
+              <h3>Radar de vagas júnior</h3>
+              <p>Raspador + curadoria humana de vagas amigáveis para quem está começando. Stack: Python e boa vontade.</p>
+            </div>
+            <span class="tag">Projeto</span>
+          </div>
+          <div class="mat-row">
+            <div>
+              <h3>Bot da comunidade</h3>
+              <p>Avisa os encontros no grupo — construído em dupla, commit a commit, em sessão aberta.</p>
+            </div>
+            <span class="tag">Ferramenta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── cta ──────────────────────────────────────────────────── -->
+    <section class="section cta" data-od-id="cta" id="cta">
+      <div class="container">
+        <h2>Traga uma ideia. Construa com a comunidade.</h2>
+        <p class="lead">O próximo ciclo de encontros abre vagas em breve. Proponha um tema — a comunidade constrói junto.</p>
+        <a class="btn btn-primary" href="#" data-od-id="cta-primary">Participar da comunidade</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── assinatura ─────────────────────────────────────────────── -->
+  <footer class="pagefoot" data-od-id="footer">
+    <div class="container">
+      <div class="row-between wrap">
+        <span class="logo-plate">
+          <img src="assets/logo.svg" width="128" height="25" alt="Fazedor de Código" />
+        </span>
+        <div class="row row-lg wrap">
+          <nav aria-label="Rodapé" class="row row-lg foot-nav">
+            <a href="#encontros">Encontros</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#materiais">Materiais</a>
+          </nav>
+          <ul class="socials" aria-label="Redes sociais" data-od-id="socials">
+            <li><a href="https://x.com/fazedordecodigo" target="_blank" rel="noopener" aria-label="X (Twitter)" data-od-id="social-x">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+            </a></li>
+            <li><a href="https://www.linkedin.com/company/fazedordecodigo" target="_blank" rel="noopener" aria-label="LinkedIn" data-od-id="social-linkedin">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a></li>
+            <li><a href="https://www.instagram.com/fazedordecodigo" target="_blank" rel="noopener" aria-label="Instagram" data-od-id="social-instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+            </a></li>
+            <li><a href="https://fazedordecodigo.substack.com" target="_blank" rel="noopener" aria-label="Substack" data-od-id="social-substack">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+            </a></li>
+            <li><a href="https://dev.to/fazedordecodigo" target="_blank" rel="noopener" aria-label="DEV Community" data-od-id="social-devto">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.3zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.66-2.52.74-.04c.4-.02.73 0 .73.04 0 .14-1.67 6.38-1.8 6.68z"/></svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="foot-rule" />
+      <p class="signature">Code. Compartilhe. Construa. <span class="text-accent">Impacte.</span></p>
+      <hr class="foot-rule" />
+      <div class="row-between wrap foot-legal">
+        <span>© 2026 Fazedor de Código</span>
+        <span class="meta">comunidade · aprendizado · construção · impacto</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

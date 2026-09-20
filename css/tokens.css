@@ -1,0 +1,57 @@
+/* ─── tokens · Fazedor de Código ─────────────────────────────────── */
+:root {
+  --bg:      #F7F7F5;
+  --surface: #FFFFFF;
+  --fg:      #111111;
+  --accent:  #FF6A00;
+  --bege:    #E9D8C3;
+  --marrom:  #8B5E3C;
+
+  --muted:        color-mix(in oklab, var(--fg) 55%, var(--bg));
+  --border:       color-mix(in oklab, var(--fg) 12%, var(--bg));
+  --accent-hover: color-mix(in oklab, var(--accent) 88%, var(--fg));
+  --accent-ink:   color-mix(in oklab, var(--accent) 85%, var(--fg));
+  --accent-tint:  color-mix(in oklab, var(--accent) 12%, var(--bg));
+  --bege-tint:    color-mix(in oklab, var(--bege) 45%, var(--bg));
+  --danger:       var(--marrom);
+  --on-accent:    #111111;
+
+  --pratica:     #DCDB9E;
+  --comunidade:  #B3D5E5;
+  --curiosidade: #F8D08D;
+  --construcao:  #D0C1DF;
+  --impacto:     #F7C2B6;
+
+  --font-display: "Space Grotesk", "Inter", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-body:    "Inter", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-h1: clamp(40px, 5.4vw, 64px);
+  --fs-h2: clamp(28px, 3.4vw, 36px);
+  --fs-h3: 17px;
+  --fs-lead: 18px;
+  --fs-body: 16px;
+  --fs-meta: 13px;
+
+  --gap-xs: 8px;
+  --gap-sm: 12px;
+  --gap-md: 20px;
+  --gap-lg: 32px;
+  --gap-xl: 56px;
+  --gap-2xl: 80px;
+  --container: 1160px;
+  --gutter: 24px;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  --divider-dashed: 1px dashed color-mix(in oklab, var(--fg) 28%, var(--bg));
+  --shadow-soft:  0 1px 2px color-mix(in oklab, var(--fg) 8%, transparent),
+                  0 2px 8px color-mix(in oklab, var(--fg) 6%, transparent);
+  --shadow-raise: 0 2px 4px color-mix(in oklab, var(--fg) 10%, transparent),
+                  0 8px 20px color-mix(in oklab, var(--fg) 10%, transparent);
+  --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--fg);
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+}

@@ -1,0 +1,43 @@
+# AGENTS.md
+
+This file contains instructions for AI agents working with this project.
+
+## Project Overview
+
+This is a landing page for the Fazedor de Código community, a community of hands-on learning: weekly meetups, group projects, and open mentorship. The motto is simple — _learn by doing_.
+
+## Design System
+
+The project uses a custom design system defined in `DESIGN.md` and `SKILLS.md`. Always refer to these files when making design decisions.
+
+## File Structure
+
+- `index.html` - The main landing page (markup only)
+- `css/tokens.css` - Design tokens (`:root` variables: colors, fonts, spacing, radii, shadows)
+- `css/base.css` - Reset, base element styles, typography, reduced-motion
+- `css/layout.css` - Layout primitives (`.container`, `.section`, `.stack`, `.row`, grids, utilities)
+- `css/components.css` - Reusable components (topnav, footer, buttons, cards, chips, tags)
+- `css/sections.css` - Page-section styles (hero, encontros, steps, materiais, cta)
+- `assets/` - Static assets (`logo.svg`, `hero-capivara.webp`)
+- `DESIGN.md` - Design system documentation
+- `SKILLS.md` - Usage instructions for AI agents
+- `AGENTS.md` - This file
+
+## Development Guidelines
+
+- Keep markup in `index.html` and styles in the `css/` files — no inline `<style>` or `style=` attributes
+- Use the design system tokens (`css/tokens.css`) for colors, typography, and spacing
+- Keep images and icons as files under `assets/` (or inline SVG for small icons)
+- Ensure the page is responsive and accessible
+- Follow the design system for colors, typography, and spacing
+- Always refer to `DESIGN.md` and `SKILLS.md` for design decisions
+
+## Common Tasks
+
+- When adding new content, ensure it follows the design system
+- When updating styles, use the CSS variables defined in the design system
+- When adding new sections, maintain the same visual style as existing sections
+
+## Contact
+
+For questions or clarifications, refer to the project maintainers.

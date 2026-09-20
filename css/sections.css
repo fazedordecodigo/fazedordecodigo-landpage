@@ -1,0 +1,58 @@
+/* ─── hero ──────────────────────────────────────────────────────── */
+.hero { padding-block: var(--gap-2xl); }
+.hero-split { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: var(--gap-2xl); align-items: center; }
+.hero h1 { margin-bottom: var(--gap-md); }
+.hero .lead { margin-bottom: var(--gap-lg); }
+.hero-cta { display: inline-flex; gap: var(--gap-sm); flex-wrap: wrap; }
+.stage {
+  margin: 0;
+  background: var(--bege-tint);
+  border-radius: var(--radius-lg);
+  padding: var(--gap-lg);
+  display: grid; place-items: center;
+}
+.stage img { width: 100%; height: auto; max-width: 360px; }
+@media (max-width: 920px) {
+  .hero-split { grid-template-columns: 1fr; }
+  .stage { order: -1; }
+  .stage img { max-width: 260px; }
+}
+
+/* ─── encontro card ─────────────────────────────────────────────── */
+.encontro h3 { margin: 14px 0 8px; }
+.encontro p { margin: 0; color: var(--muted); font-size: 15px; }
+
+/* ─── steps ─────────────────────────────────────────────────────── */
+.steps { list-style: none; margin: var(--gap-lg) 0 0; padding: 0; }
+.steps li {
+  display: grid; grid-template-columns: 48px 1fr; gap: var(--gap-md);
+  padding: var(--gap-md) 0;
+  border-top: var(--divider-dashed);
+  align-items: baseline;
+}
+.steps .num { font-size: 14px; font-weight: 600; color: var(--muted); }
+.steps h3 { margin-bottom: 4px; }
+.steps p { margin: 0; color: var(--muted); font-size: 15px; }
+
+/* ─── materiais list ────────────────────────────────────────────── */
+.materiais { padding: 0; overflow: hidden; }
+.materiais:hover { box-shadow: none; translate: none; }
+.mat-row {
+  display: flex; align-items: baseline; justify-content: space-between; gap: var(--gap-md);
+  padding: var(--gap-md) 24px;
+  border-top: var(--divider-dashed);
+}
+.mat-row:first-of-type { border-top: 0; }
+.mat-row h3 { font-size: 15px; margin-bottom: 4px; }
+.mat-row p { margin: 0; color: var(--muted); font-size: 14px; }
+.mat-head {
+  padding: 18px 24px;
+  background: var(--bege-tint);
+  font-family: var(--font-mono); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+
+/* ─── cta ───────────────────────────────────────────────────────── */
+.cta { text-align: center; }
+.cta .container { max-width: 640px; }
+.cta .lead { margin: 16px auto 32px; }
