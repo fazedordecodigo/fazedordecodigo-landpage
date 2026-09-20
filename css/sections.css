@@ -25,6 +25,7 @@
   align-items: stretch;
 }
 .encontros-split .stage { padding: var(--gap-md); }
+.encontros-split .stage img { max-width: 460px; }
 @media (max-width: 920px) {
   .encontros-split { grid-template-columns: 1fr; }
 }
