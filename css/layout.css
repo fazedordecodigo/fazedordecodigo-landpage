@@ -22,4 +22,7 @@
   .grid-2 { grid-template-columns: 1fr; }
   .grid-4 { gap: var(--gap-md); }
 }
+@media (max-width: 720px) {
+  .section { padding-block: var(--gap-xl); }
+}
 @media (max-width: 540px) { .grid-4 { grid-template-columns: 1fr; } }

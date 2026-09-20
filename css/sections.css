@@ -13,9 +13,10 @@
 }
 .stage img { width: 100%; height: auto; max-width: 360px; }
 @media (max-width: 920px) {
-  .hero-split { grid-template-columns: 1fr; }
-  .stage { order: -1; }
-  .stage img { max-width: 260px; }
+  .hero { padding-block: var(--gap-xl); }
+  .hero-split { grid-template-columns: 1fr; gap: var(--gap-lg); }
+  .stage { padding: var(--gap-md); }
+  .stage img { max-width: 280px; }
 }
 
 /* ─── encontros split ───────────────────────────────────────────── */
@@ -28,6 +29,9 @@
 .encontros-split .stage img { max-width: 460px; }
 @media (max-width: 920px) {
   .encontros-split { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .encontros-split .stage img { max-width: 240px; }
 }
 
 /* ─── luma embed ────────────────────────────────────────────────── */
@@ -88,6 +92,10 @@
   transition: color 120ms var(--ease-out);
 }
 .mat-more:hover { color: var(--fg); }
+@media (max-width: 560px) {
+  .mat-row { flex-direction: column; align-items: flex-start; gap: var(--gap-xs); padding-inline: 16px; }
+  .mat-head, .mat-more { padding-inline: 16px; }
+}
 
 /* ─── cta ───────────────────────────────────────────────────────── */
 .cta { text-align: center; }
