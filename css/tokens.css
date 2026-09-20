@@ -15,6 +15,8 @@
   --bege-tint:    color-mix(in oklab, var(--bege) 45%, var(--bg));
   --danger:       var(--marrom);
   --on-accent:    #111111;
+  --on-attribute: #111111;
+  --plate:        color-mix(in oklab, var(--bege) 45%, #F7F7F5);
 
   --pratica:     #DCDB9E;
   --comunidade:  #B3D5E5;
@@ -48,10 +50,21 @@
   --radius-pill: 999px;
 
   --divider-dashed: 1px dashed color-mix(in oklab, var(--fg) 28%, var(--bg));
-  --shadow-soft:  0 1px 2px color-mix(in oklab, var(--fg) 8%, transparent),
-                  0 2px 8px color-mix(in oklab, var(--fg) 6%, transparent);
-  --shadow-raise: 0 2px 4px color-mix(in oklab, var(--fg) 10%, transparent),
-                  0 8px 20px color-mix(in oklab, var(--fg) 10%, transparent);
+  --shadow-soft:  0 1px 2px color-mix(in oklab, #111111 8%, transparent),
+                  0 2px 8px color-mix(in oklab, #111111 6%, transparent);
+  --shadow-raise: 0 2px 4px color-mix(in oklab, #111111 10%, transparent),
+                  0 8px 20px color-mix(in oklab, #111111 10%, transparent);
   --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--fg);
   --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  color-scheme: light;
+}
+
+/* ─── tema escuro: par documentado, derivações recomputam ───────── */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg:         #111111;
+  --fg:         #F7F7F5;
+  --surface:    color-mix(in oklab, var(--fg) 7%, var(--bg));
+  --accent-ink: #FF6A00;
+  --bege-tint:  color-mix(in oklab, var(--bege) 16%, var(--bg));
 }

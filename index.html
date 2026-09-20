@@ -1,9 +1,19 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head><script type="application/json" data-od-external-dependencies>["https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap"]</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fazedor de Código — aprenda programação fazendo</title>
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem('fz:theme'); } catch (e) {}
+      if (t !== 'dark' && t !== 'light') {
+        t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
   <meta name="description" content="Comunidade de aprendizado mão na massa: encontros mensais, projetos em grupo e mentoria aberta. Traga uma ideia, construa em dupla e publique junto." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#F7F7F5" />
@@ -80,7 +90,13 @@
         <a href="#como-funciona">Como funciona</a>
         <a href="#materiais">Materiais</a>
       </nav>
-      <a class="btn btn-secondary" href="#cta" data-od-id="nav-cta">Participar</a>
+      <div class="row row-sm">
+        <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Mudar para tema escuro" data-od-id="theme-toggle">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2M12 19.5v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2.5 12h2M19.5 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <a class="btn btn-secondary" href="#cta" data-od-id="nav-cta">Participar</a>
+      </div>
     </div>
   </header>
 
@@ -240,12 +256,13 @@
       <p class="signature">Code. Compartilhe. Construa. <span class="text-accent">Impacte.</span></p>
       <hr class="foot-rule" />
       <div class="row-between wrap foot-legal">
-        <span>© <span id="year"></span>2026</span> Fazedor de Código</span>
+        <span>© <span id="year">2026</span> Fazedor de Código</span>
         <span class="meta">comunidade · aprendizado · construção · impacto</span>
       </div>
     </div>
   </footer>
 
+  <script src="js/theme.js" defer></script>
   <script src="js/articles.js" defer></script>
 </body>
 </html>

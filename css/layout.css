@@ -4,13 +4,14 @@
   margin-inline: auto;
   padding-inline: var(--gutter);
 }
-.section { padding-block: var(--gap-2xl); }
+.section { padding-block: var(--gap-2xl); transition: border-color 200ms var(--ease-out); }
 .section + .section { border-top: var(--divider-dashed); }
 .section-head { max-width: 44ch; }
 .stack { display: flex; flex-direction: column; }
 .stack > * + * { margin-top: var(--gap-md); }
 .stack-loose { gap: 40px; }
 .row { display: flex; align-items: center; gap: var(--gap-md); }
+.row-sm { gap: var(--gap-sm); }
 .row-lg { gap: var(--gap-lg); }
 .row-between { display: flex; align-items: center; justify-content: space-between; gap: var(--gap-md); }
 .wrap { flex-wrap: wrap; }
