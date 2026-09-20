@@ -21,6 +21,8 @@
 /* ─── encontro card ─────────────────────────────────────────────── */
 .encontro h3 { margin: 14px 0 8px; }
 .encontro p { margin: 0; color: var(--muted); font-size: 15px; }
+.encontro .card-foot a { text-decoration: underline; text-underline-offset: 3px; }
+.encontro .card-foot a:hover { color: var(--fg); }
 
 /* ─── steps ─────────────────────────────────────────────────────── */
 .steps { list-style: none; margin: var(--gap-lg) 0 0; padding: 0; }
@@ -51,6 +53,17 @@
   font-family: var(--font-mono); font-size: 12px; font-weight: 600;
   letter-spacing: 0.14em; text-transform: uppercase;
 }
+.mat-row h3 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.mat-more {
+  display: block;
+  padding: 14px 24px;
+  border-top: var(--divider-dashed);
+  font-family: var(--font-mono); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--muted);
+  transition: color 120ms var(--ease-out);
+}
+.mat-more:hover { color: var(--fg); }
 
 /* ─── cta ───────────────────────────────────────────────────────── */
 .cta { text-align: center; }
