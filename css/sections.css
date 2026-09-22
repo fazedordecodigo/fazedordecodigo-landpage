@@ -101,6 +101,30 @@
   .mat-head, .mat-more { padding-inline: 16px; }
 }
 
+/* ─── parceiros ─────────────────────────────────────────────────── */
+.partner-list {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: var(--gap-md);
+}
+.partner {
+  display: grid; place-items: center;
+  height: 96px; padding: 0 var(--gap-lg);
+  background: var(--plate);
+  border: 1px solid var(--border); border-radius: var(--radius-md);
+  transition: border-color 120ms var(--ease-out), translate 200ms var(--ease-out);
+}
+.partner:hover {
+  translate: 0 -2px;
+  border-color: color-mix(in oklab, var(--fg) 40%, var(--bg));
+}
+.partner img { height: 40px; width: auto; }
+.partner-fiap img { height: 32px; }
+@media (max-width: 560px) {
+  .partner { height: 80px; padding-inline: var(--gap-md); }
+  .partner img { height: 32px; }
+  .partner-fiap img { height: 26px; }
+}
+
 /* ─── faq ───────────────────────────────────────────────────────── */
 .faq-list { margin: 0; max-width: 760px; }
 .faq-item { padding: var(--gap-md) 0; border-top: var(--divider-dashed); }

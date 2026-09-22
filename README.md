@@ -4,11 +4,11 @@ Landing page da comunidade **Fazedor de Código**, uma comunidade de aprendizado
 
 ## O que tem aqui
 
-| Arquivo      | Descrição                                         |
-| ------------ | ------------------------------------------------- |
-| `index.html` | A landing page (somente marcação)                 |
-| `css/`       | Estilos separados por responsabilidade            |
-| `assets/`    | Imagens e logo (`logo.svg`, `hero-capivara.webp`) |
+| Arquivo      | Descrição                                                                        |
+| ------------ | -------------------------------------------------------------------------------- |
+| `index.html` | A landing page (somente marcação)                                                |
+| `css/`       | Estilos separados por responsabilidade                                           |
+| `assets/`    | Imagens e logos (`logo.svg`, `hero-capivara.webp`, `hostgator.webp`, `fiap.svg`) |
 
 Sem dependências de npm — HTML + CSS estáticos, com o JS de `src/` compilado via `npx -p typescript tsc`:
 
@@ -34,6 +34,7 @@ python3 -m http.server 8000
 - **Encontros** (`#encontros`) — agenda mensal: Deploy sem medo, Mutirão de portfólios, Clube do rubber duck, Bot da comunidade
 - **Como funciona** (`#como-funciona`) — o ciclo em 3 passos: traga uma ideia, construa em dupla, publique junto
 - **Materiais** (`#materiais`) — guias e projetos da comunidade
+- **Parceiros** (`#parceiros`) — logos dos parceiros (HostGator, FIAP)
 - **FAQ** (`#faq`) — perguntas frequentes sobre a comunidade
 - **Contato** (`#contato`) — formulário de contato (Web3Forms + hCaptcha)
 - **CTA** (`#cta`) — chamada para participar
