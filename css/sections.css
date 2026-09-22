@@ -101,6 +101,33 @@
   .mat-head, .mat-more { padding-inline: 16px; }
 }
 
+/* ─── faq ───────────────────────────────────────────────────────── */
+.faq-list { margin: 0; max-width: 760px; }
+.faq-item { padding: var(--gap-md) 0; border-top: var(--divider-dashed); }
+.faq-item:last-child { border-bottom: var(--divider-dashed); }
+.faq-item dt { font-family: var(--font-display); font-weight: 600; margin-bottom: 6px; }
+.faq-item dd { margin: 0; color: var(--muted); font-size: 15px; }
+.faq-item dd a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
+.faq-item dd a:hover { color: var(--accent-ink); }
+
+/* ─── contato ───────────────────────────────────────────────────── */
+.contato-split {
+  display: grid; grid-template-columns: 0.9fr 1.1fr;
+  gap: var(--gap-2xl); align-items: start;
+}
+.contato .lead { margin-top: var(--gap-md); }
+.contact-form { display: grid; gap: var(--gap-md); padding: var(--gap-lg); }
+.contact-form:hover { box-shadow: none; translate: none; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap-md); }
+.contact-form .btn { justify-self: start; }
+@media (max-width: 920px) {
+  .contato-split { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .field-row { grid-template-columns: 1fr; }
+  .contact-form { padding: var(--gap-md); }
+}
+
 /* ─── cta ───────────────────────────────────────────────────────── */
 .cta { text-align: center; }
 .cta .container { max-width: 640px; }

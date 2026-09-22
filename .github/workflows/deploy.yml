@@ -35,6 +35,17 @@ jobs:
       - name: Transpile TypeScript
         run: npx tsc
 
+      - name: Inject Web3Forms access key
+        env:
+          WEB3FORMS_ACCESS_KEY: ${{ secrets.WEB3FORMS_ACCESS_KEY }}
+        run: |
+          if [ -z "$WEB3FORMS_ACCESS_KEY" ]; then
+            echo "secret ausente, mantendo placeholder"
+            exit 0
+          fi
+          grep -q 'YOUR_WEB3FORMS_ACCESS_KEY' index.html || { echo "placeholder não encontrado em index.html"; exit 1; }
+          sed -i "s/YOUR_WEB3FORMS_ACCESS_KEY/${WEB3FORMS_ACCESS_KEY}/" index.html
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

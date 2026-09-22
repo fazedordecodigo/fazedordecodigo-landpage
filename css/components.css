@@ -167,3 +167,31 @@
   white-space: nowrap;
   transition: color 200ms var(--ease-out), border-color 200ms var(--ease-out);
 }
+
+/* ─── forms ─────────────────────────────────────────────────────── */
+.field { display: grid; gap: 6px; }
+.field label {
+  font-family: var(--font-mono); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
+}
+.field .optional { text-transform: none; letter-spacing: 0; font-weight: 400; }
+.field input, .field select, .field textarea {
+  width: 100%; font: inherit; color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  transition: border-color 120ms var(--ease-out);
+}
+.field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible {
+  outline: none; box-shadow: var(--focus-ring); border-color: var(--fg);
+}
+.field input::placeholder, .field textarea::placeholder { color: var(--muted); }
+.field textarea { resize: vertical; min-height: 120px; }
+.hp {
+  position: absolute; left: -9999px;
+  width: 1px; height: 1px; opacity: 0; pointer-events: none;
+}
+.form-status { margin: 0; font-size: 14px; min-height: 1.4em; }
+.form-status.is-success { color: var(--accent-ink); }
+.form-status.is-error { color: var(--fg); }
+.form-status:empty { display: none; }
